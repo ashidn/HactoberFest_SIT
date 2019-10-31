@@ -1,6 +1,18 @@
 #include<stdio.h>
+
 int gcd(int a,int b){
-	//Write code here
+	int t;
+	if(a < b){
+		t = a;
+		a = b;
+		b = t;
+	}
+	while(a%b != 0){
+		t = a;
+		a = b;
+		b = t%b;
+	}
+	return b;
 }
 int main(){
 	int num1,num2,res=0;
