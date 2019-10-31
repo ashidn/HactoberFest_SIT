@@ -4,7 +4,8 @@ int fact(int num){
 		return 1;
 	else{
 		int factval = 1;
-		for(int i=num; i>1; i--)
+		int i;
+		for(i=num; i>1; i--)
 			factval = factval*i;
 		return factval;
 	}
